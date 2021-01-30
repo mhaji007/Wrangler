@@ -30,6 +30,11 @@ header .container {
           align-items: center;
 }
 
+header .container h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 700;
+}
+
 header .container .magnifier {
   height: 40px;
   width: 40px;
@@ -40,8 +45,9 @@ header .container .menu {
 }
 
 header .container .menu__icon {
-  height: 80px;
-  width: 80px;
+  padding-bottom: 10px;
+  height: 90px;
+  width: 90px;
 }
 
 .container {
@@ -50,6 +56,41 @@ header .container .menu__icon {
 
 main {
   height: 90vh;
+}
+
+main nav {
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  z-index: 20;
+}
+
+main nav .page {
+  position: absolute;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  background: #ab9a82;
+  cursor: pointer;
+}
+
+main nav .page:hover, main nav .page.selected {
+  background-color: #897252;
+  height: 10px;
+  width: 10px;
+  left: -1px;
+}
+
+main nav .page:nth-child(2) {
+  top: 30px;
+}
+
+main nav .page:nth-child(3) {
+  top: 60px;
+}
+
+main nav .page:nth-child(4) {
+  top: 90px;
 }
 
 main ol.pages {
