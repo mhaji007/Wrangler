@@ -17,7 +17,8 @@ header {
   height: 10vh;
 }
 
-header .container {
+header .nav-container {
+  padding-left: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,21 +31,21 @@ header .container {
           align-items: center;
 }
 
-header .container h1 {
+header .nav-container h1 {
   font-family: 'Playfair Display SC', serif;
   font-weight: 700;
 }
 
-header .container .magnifier {
+header .nav-container .magnifier {
   height: 40px;
   width: 40px;
 }
 
-header .container .menu {
+header .nav-container .menu {
   background-color: #f6f1ee;
 }
 
-header .container .menu__icon {
+header .nav-container .menu__icon {
   padding-bottom: 10px;
   height: 90px;
   width: 90px;
@@ -108,6 +109,8 @@ main ol.pages > li {
   display: -ms-flexbox;
   display: flex;
   counter-increment: header;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 main ol.pages > li .pages__left-column,

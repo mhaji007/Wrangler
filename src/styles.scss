@@ -25,7 +25,8 @@ header {
 
 
   color: $primary;
-  .container {
+  .nav-container {
+
     h1 {
       font-family: 'Playfair Display SC', serif;
       font-weight: 700;
@@ -43,7 +44,7 @@ header {
       height: 90px;
       width: 90px;
     }
-
+    padding-left: 60px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -116,6 +117,7 @@ main {
       // top counter starts with 1
       // for the first item
       counter-increment: header;
+      transition: all .7s ease;
 
       .pages__left-column,
       .pages__right-column {
